@@ -1,0 +1,109 @@
+site_name: Databricks Mastery Path
+site_description: A free Databricks course — the lakehouse, Spark on Databricks, Delta Lake, Unity Catalog, Auto Loader, Lakeflow pipelines, workflows, Databricks SQL, MLflow, Asset Bundles and cost control.
+site_url: https://sigilipelli.github.io/databricks-mastery-path/
+repo_url: https://github.com/sigilipelli/databricks-mastery-path
+repo_name: databricks-mastery-path
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/progress-tracker.css
+
+extra_javascript:
+  - javascripts/progress-tracker.js
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - License: license.md
+  - "Level 1 · Lakehouse & Spark Foundations":
+      - Overview: level-1/index.md
+      - "01 · The Lakehouse: Control Plane, Compute Plane & Storage": level-1/01-lakehouse-architecture.md
+      - "02 · Workspaces, Compute Types & Notebooks": level-1/02-workspace-compute.md
+      - "03 · Spark DataFrames: Transformations & Actions": level-1/03-spark-dataframes.md
+      - "04 · Spark SQL, Built-in Functions & Window Functions": level-1/04-spark-sql-functions.md
+      - "05 · Reading & Writing Files: Formats, Schemas & Modes": level-1/05-reading-writing-data.md
+      - "06 · Delta Lake Tables: Create, Read, Update, Delete": level-1/06-delta-lake-basics.md
+      - "07 · Inside the Delta Log: Transactions & ACID": level-1/07-delta-log-acid.md
+      - "08 · Time Travel, RESTORE & VACUUM": level-1/08-time-travel-restore-vacuum.md
+      - "09 · Tables, Views & Volumes: Where Data Lives": level-1/09-catalog-tables-volumes.md
+      - "10 · Project — A Sales Lakehouse You Can Run Locally": level-1/10-project-local-sales-lakehouse.md
+  - "Level 2 · Delta Lake & Data Engineering":
+      - Overview: level-2/index.md
+      - "01 · MERGE, Upserts & the Change Data Feed": level-2/01-merge-upserts-cdf.md
+      - "02 · Schema Enforcement, Evolution & Constraints": level-2/02-schema-enforcement-evolution.md
+      - "03 · OPTIMIZE, Z-Order & Liquid Clustering": level-2/03-optimize-zorder-clustering.md
+      - "04 · Partitioning, File Sizes & Data Skipping": level-2/04-partitioning-file-layout.md
+      - "05 · How Spark Executes: Stages, Shuffles & AQE": level-2/05-spark-execution-aqe.md
+      - "06 · Joins, Broadcast & Data Skew": level-2/06-joins-skew-broadcast.md
+      - "07 · Structured Streaming & Checkpoints": level-2/07-structured-streaming.md
+      - "08 · Auto Loader: Incremental File Ingestion": level-2/08-auto-loader.md
+      - "09 · The Medallion Architecture": level-2/09-medallion-architecture.md
+      - "10 · Project — A Bronze/Silver/Gold Pipeline": level-2/10-project-medallion-pipeline.md
+  - "Level 3 · Unity Catalog, Pipelines & Sharing":
+      - Overview: level-3/index.md
+      - "01 · Unity Catalog: Metastore, Catalogs & Three-Level Names": level-3/01-unity-catalog-model.md
+      - "02 · Privileges, Ownership & Grants": level-3/02-privileges-grants.md
+      - "03 · Storage Credentials, External Locations & Volumes": level-3/03-external-locations-volumes.md
+      - "04 · Row Filters, Column Masks & ABAC": level-3/04-row-filters-column-masks.md
+      - "05 · Lineage, Audit & System Tables": level-3/05-lineage-system-tables.md
+      - "06 · Lakeflow Spark Declarative Pipelines": level-3/06-lakeflow-declarative-pipelines.md
+      - "07 · Lakeflow Jobs: Orchestrating Workloads": level-3/07-lakeflow-jobs.md
+      - "08 · OpenSharing (Formerly Delta Sharing): Sharing Data Across Organizations": level-3/08-opensharing.md
+      - "09 · Databricks SQL, Warehouses & Dashboards": level-3/09-databricks-sql-warehouses.md
+      - "10 · Project — Design a Governed Data Platform": level-3/10-project-governed-platform.md
+  - "Level 4 · Development, ML & Operations":
+      - Overview: level-4/index.md
+      - "01 · Declarative Automation Bundles & CI/CD": level-4/01-asset-bundles-cicd.md
+      - "02 · Testing PySpark & Delta Code Locally": level-4/02-testing-pyspark.md
+      - "03 · MLflow: Tracking Experiments": level-4/03-mlflow-tracking.md
+      - "04 · Model Registry & Serving": level-4/04-models-serving.md
+      - "05 · AI Functions, Genie Agents & AI Search": level-4/05-ai-functions-genie.md
+      - "06 · Cost Management: DBUs, Budgets & System Billing": level-4/06-cost-management.md
+      - "07 · Performance: Photon, Serverless & Caching": level-4/07-performance-photon-serverless.md
+      - "08 · Table Maintenance & Predictive Optimization": level-4/08-table-maintenance.md
+      - "09 · Migrating to Databricks": level-4/09-migration.md
+      - "10 · Capstone — An End-to-End Platform Plan": level-4/10-capstone-platform.md

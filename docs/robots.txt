@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sigilipelli.github.io/databricks-mastery-path/sitemap.xml
