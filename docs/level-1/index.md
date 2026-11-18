@@ -18,8 +18,8 @@ function that returns different running totals for tied rows, and a `VACUUM` tha
     Edition workspace is enough to try the platform-only exercises.
 
 **Prerequisites:** basic Python and SQL. Java 17+ and Python 3.12 to run the local labs. If SQL is new, start with the
-[SQL Mastery Path](https://sigilipelli.github.io/sql-mastery-path/); for Spark in more depth see the
-[PySpark Mastery Path](https://sigilipelli.github.io/pyspark-mastery-path/).
+[SQL Mastery Path](https://learnmasterypath.com/sql-mastery-path/); for Spark in more depth see the
+[PySpark Mastery Path](https://learnmasterypath.com/pyspark-mastery-path/).
 
 ## Modules
 

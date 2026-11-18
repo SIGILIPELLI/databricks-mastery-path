@@ -1,6 +1,6 @@
 site_name: Databricks Mastery Path
 site_description: A free Databricks course — the lakehouse, Spark on Databricks, Delta Lake, Unity Catalog, Auto Loader, Lakeflow pipelines, workflows, Databricks SQL, MLflow, Asset Bundles and cost control.
-site_url: https://sigilipelli.github.io/databricks-mastery-path/
+site_url: https://learnmasterypath.com/databricks-mastery-path/
 repo_url: https://github.com/sigilipelli/databricks-mastery-path
 repo_name: databricks-mastery-path
 
