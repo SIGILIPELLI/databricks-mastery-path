@@ -53,9 +53,11 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/progress-tracker.css
+  - stylesheets/final-quiz.css
 
 extra_javascript:
   - javascripts/progress-tracker.js
+  - javascripts/final-quiz.js
 
 
 
@@ -127,3 +129,5 @@ nav:
       - "08 · Table Maintenance & Predictive Optimization": level-4/08-table-maintenance.md
       - "09 · Migrating to Databricks": level-4/09-migration.md
       - "10 · Capstone — An End-to-End Platform Plan": level-4/10-capstone-platform.md
+  - "🎯 Final Quiz": quiz.md
+
