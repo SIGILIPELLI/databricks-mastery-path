@@ -5,26 +5,6 @@ description: "Free Databricks course: 40 lessons on the lakehouse, Spark, Delta 
 
 # Databricks Mastery Path
 
-<div class="mp-hero-lockup">
-  <div class="mp-hero-globe">
-    <svg viewBox="0 0 160 160" class="mp-globe-svg mp-mark">
-      <circle cx="80" cy="80" r="74" fill="var(--md-default-bg-color, #FAF7EF)" stroke="#2FA98D" stroke-width="5"/>
-      <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
-      <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
-      <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
-      <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
-      <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
-    </svg>
-  </div>
-  <div class="mp-hero-divider"></div>
-  <div class="mp-hero-text">
-    <div class="mp-hero-title">Mastery Path</div>
-    <div class="mp-hero-sub">BOOTCAMP</div>
-    <div class="mp-hero-rule"></div>
-    <div class="mp-hero-byline">VINOD BHANUJA</div>
-  </div>
-</div>
-
 Databricks is Apache Spark and Delta Lake plus a lot of platform: a governance layer (Unity Catalog), compute you do or don't manage,
 pipelines and jobs, SQL warehouses, ML tooling and AI features. It's easy to click through and hard to know what is actually
 happening underneath. A one-row `DELETE` that rewrites 49,999 other rows. A partition column that turns 2 MB into 86,665 files and a
