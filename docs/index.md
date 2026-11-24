@@ -1,6 +1,6 @@
 ---
 title: "Free Databricks Course: Lakehouse, Spark, Delta Lake, Unity Catalog, Pipelines, Jobs, SQL, MLflow, Bundles and Cost"
-description: "Free Databricks course: 40 lessons on the lakehouse, Spark, Delta Lake, Auto Loader, Unity Catalog, pipelines, jobs, MLflow, bundles, cost and maintenance."
+description: "Free Databricks course: 36 lessons and 4 projects on the lakehouse, Spark, Delta Lake, Auto Loader, Unity Catalog, pipelines, jobs, MLflow, bundles, cost and maintenance."
 ---
 
 # Databricks Mastery Path
@@ -51,7 +51,7 @@ didn't fix a hot key on a small test, and why a deletion vector hides a row with
 | **3 · Unity Catalog, Pipelines & Sharing** | Governance, privileges, storage, masks, lineage, declarative pipelines, jobs, sharing, SQL | 10 | Design and operate a governed, orchestrated platform |
 | **4 · Development, ML & Operations** | Bundles, testing, MLflow, serving, AI features, cost, performance, maintenance, migration | 10 | Ship, test, monitor and afford it, and plan the whole thing |
 
-Each level has 9 teaching modules plus a hands-on project (module 10), for **40 lessons** total.
+Each level has 9 teaching modules plus a hands-on project (module 10), which makes **36 lessons and 4 projects** in total.
 
 ## How to use this site
 
