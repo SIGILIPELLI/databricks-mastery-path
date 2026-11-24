@@ -1,0 +1,4242 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="179 Databricks interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Databricks Mastery Path.">
+      
+      
+      
+        <link rel="canonical" href="https://learnmasterypath.com/databricks-mastery-path/interview-questions/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../cheat-sheet/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+  
+  <title>Databricks Interview Questions and Answers (179 Questions)</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/progress-tracker.css">
+    
+      <link rel="stylesheet" href="../stylesheets/final-quiz.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05VBGCXN12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-05VBGCXN12');
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mastery Path">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Databricks Interview Questions and Answers (179 Questions)">
+  <meta property="og:description" content="179 Databricks interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Databricks Mastery Path.">
+  <meta property="og:url" content="https://learnmasterypath.com/databricks-mastery-path/interview-questions/">
+  <meta property="og:image" content="https://learnmasterypath.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mastery Path: free structured courses, beginner to master">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Databricks Interview Questions and Answers (179 Questions)">
+  <meta name="twitter:description" content="179 Databricks interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Databricks Mastery Path.">
+  <meta name="twitter:image" content="https://learnmasterypath.com/og-image.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9440969811959397"
+     crossorigin="anonymous"></script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Mastery Path", "item": "https://learnmasterypath.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Databricks Mastery Path", "item": "https://learnmasterypath.com/databricks-mastery-path/"},
+      {"@type": "ListItem", "position": 3, "name": "Interview Questions", "item": "https://learnmasterypath.com/databricks-mastery-path/interview-questions/"}
+    ]
+  }
+  </script>
+  <style>
+    .md-banner a:hover { text-decoration: underline !important; }
+    .mp-related { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--md-default-fg-color--lightest); font-size: .78rem; }
+    .mp-related h2 { font-size: .9rem; margin: 0 0 .5rem; }
+    .mp-related ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem .9rem; }
+    .mp-related li { margin: 0 !important; }
+  </style>
+  <script type="application/json" id="mp-course-meta">{"home": false, "id": "databricks-mastery-path", "name": "Databricks Mastery Path", "repo": "https://github.com/sigilipelli/databricks-mastery-path", "src": "interview-questions.md", "url": "https://learnmasterypath.com/databricks-mastery-path/"}</script>
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/learn.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/course.css?v=1">
+  <script src="https://learnmasterypath.com/assets/learn.js" defer></script>
+  <script src="https://learnmasterypath.com/assets/signup.js" defer></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#databricks-interview-questions-and-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <a href="https://learnmasterypath.com/" style="color: inherit; text-decoration: none;">
+    &larr; Mastery Path &middot; all 100+ free courses
+  </a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/search/" style="color: inherit; text-decoration: none;">Search all courses</a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/resume/" style="color: inherit; font-weight: 700; text-decoration: none;">
+    Got the skills? Free resume ATS check &rarr;
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Databricks Mastery Path" class="md-header__button md-logo" aria-label="Databricks Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Databricks Mastery Path
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Databricks Interview Questions and Answers (179 Questions)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sigilipelli/databricks-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    databricks-mastery-path
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Interview Questions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../cheat-sheet/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cheat Sheet
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 1 · Lakehouse & Spark Foundations
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 2 · Delta Lake & Data Engineering
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 3 · Unity Catalog, Pipelines & Sharing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-4/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 4 · Development, ML & Operations
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quiz/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Final Quiz
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Databricks Mastery Path" class="md-nav__button md-logo" aria-label="Databricks Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    Databricks Mastery Path
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sigilipelli/databricks-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    databricks-mastery-path
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-lakehouse-spark-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Lakehouse &amp; Spark Foundations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Lakehouse &amp; Spark Foundations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-the-lakehouse-control-plane-compute-plane-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · The Lakehouse: Control Plane, Compute Plane &amp; Storage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-workspaces-compute-types-notebooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Workspaces, Compute Types &amp; Notebooks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-spark-dataframes-transformations-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Spark DataFrames: Transformations &amp; Actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-spark-sql-built-in-functions-window-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Spark SQL, Built-in Functions &amp; Window Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-reading-writing-files-formats-schemas-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Reading &amp; Writing Files: Formats, Schemas &amp; Modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-delta-lake-tables-create-read-update-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Delta Lake Tables: Create, Read, Update, Delete
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-inside-the-delta-log-transactions-acid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Inside the Delta Log: Transactions &amp; ACID
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-time-travel-restore-vacuum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Time Travel, RESTORE &amp; VACUUM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-tables-views-volumes-where-data-lives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Tables, Views &amp; Volumes: Where Data Lives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-sales-lakehouse-you-can-run-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Sales Lakehouse You Can Run Locally
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-delta-lake-data-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Delta Lake &amp; Data Engineering
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Delta Lake &amp; Data Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-merge-upserts-the-change-data-feed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · MERGE, Upserts &amp; the Change Data Feed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-schema-enforcement-evolution-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Schema Enforcement, Evolution &amp; Constraints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-optimize-z-order-liquid-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · OPTIMIZE, Z-Order &amp; Liquid Clustering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-partitioning-file-sizes-data-skipping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Partitioning, File Sizes &amp; Data Skipping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-how-spark-executes-stages-shuffles-aqe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · How Spark Executes: Stages, Shuffles &amp; AQE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-joins-broadcast-data-skew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Joins, Broadcast &amp; Data Skew
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-structured-streaming-checkpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Structured Streaming &amp; Checkpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-auto-loader-incremental-file-ingestion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Auto Loader: Incremental File Ingestion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-the-medallion-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · The Medallion Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-bronzesilvergold-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Bronze/Silver/Gold Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-unity-catalog-pipelines-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Unity Catalog, Pipelines &amp; Sharing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Unity Catalog, Pipelines &amp; Sharing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-unity-catalog-metastore-catalogs-three-level-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Unity Catalog: Metastore, Catalogs &amp; Three-Level Names
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-privileges-ownership-grants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Privileges, Ownership &amp; Grants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-storage-credentials-external-locations-volumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Storage Credentials, External Locations &amp; Volumes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-row-filters-column-masks-abac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Row Filters, Column Masks &amp; ABAC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-lineage-audit-system-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Lineage, Audit &amp; System Tables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-lakeflow-spark-declarative-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Lakeflow Spark Declarative Pipelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-lakeflow-jobs-orchestrating-workloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Lakeflow Jobs: Orchestrating Workloads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-opensharing-formerly-delta-sharing-sharing-data-across-organizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · OpenSharing (Formerly Delta Sharing): Sharing Data Across Organizations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-databricks-sql-warehouses-dashboards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Databricks SQL, Warehouses &amp; Dashboards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-design-a-governed-data-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Design a Governed Data Platform
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-development-ml-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Development, ML &amp; Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Development, ML &amp; Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-declarative-automation-bundles-cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Declarative Automation Bundles &amp; CI/CD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-testing-pyspark-delta-code-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Testing PySpark &amp; Delta Code Locally
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-mlflow-tracking-experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · MLflow: Tracking Experiments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-model-registry-serving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Model Registry &amp; Serving
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-ai-functions-genie-agents-ai-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · AI Functions, Genie Agents &amp; AI Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-cost-management-dbus-budgets-system-billing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Cost Management: DBUs, Budgets &amp; System Billing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-performance-photon-serverless-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Performance: Photon, Serverless &amp; Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-table-maintenance-predictive-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Table Maintenance &amp; Predictive Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-migrating-to-databricks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Migrating to Databricks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-an-end-to-end-platform-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — An End-to-End Platform Plan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-a-toy-delta-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build a toy Delta log
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-with-deduplicated-cdc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MERGE with deduplicated CDC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheat-sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheat Sheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 · Lakehouse & Spark Foundations
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 · Lakehouse & Spark Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/01-lakehouse-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · The Lakehouse: Control Plane, Compute Plane & Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/02-workspace-compute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Workspaces, Compute Types & Notebooks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/03-spark-dataframes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Spark DataFrames: Transformations & Actions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/04-spark-sql-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Spark SQL, Built-in Functions & Window Functions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/05-reading-writing-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Reading & Writing Files: Formats, Schemas & Modes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/06-delta-lake-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Delta Lake Tables: Create, Read, Update, Delete
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/07-delta-log-acid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Inside the Delta Log: Transactions & ACID
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/08-time-travel-restore-vacuum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Time Travel, RESTORE & VACUUM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/09-catalog-tables-volumes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Tables, Views & Volumes: Where Data Lives
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/10-project-local-sales-lakehouse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Sales Lakehouse You Can Run Locally
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 · Delta Lake & Data Engineering
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 · Delta Lake & Data Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/01-merge-upserts-cdf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · MERGE, Upserts & the Change Data Feed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/02-schema-enforcement-evolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Schema Enforcement, Evolution & Constraints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/03-optimize-zorder-clustering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · OPTIMIZE, Z-Order & Liquid Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/04-partitioning-file-layout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Partitioning, File Sizes & Data Skipping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/05-spark-execution-aqe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · How Spark Executes: Stages, Shuffles & AQE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/06-joins-skew-broadcast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Joins, Broadcast & Data Skew
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/07-structured-streaming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Structured Streaming & Checkpoints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/08-auto-loader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Auto Loader: Incremental File Ingestion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/09-medallion-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · The Medallion Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/10-project-medallion-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Bronze/Silver/Gold Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 · Unity Catalog, Pipelines & Sharing
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 · Unity Catalog, Pipelines & Sharing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/01-unity-catalog-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Unity Catalog: Metastore, Catalogs & Three-Level Names
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/02-privileges-grants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Privileges, Ownership & Grants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/03-external-locations-volumes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Storage Credentials, External Locations & Volumes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/04-row-filters-column-masks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Row Filters, Column Masks & ABAC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/05-lineage-system-tables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Lineage, Audit & System Tables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/06-lakeflow-declarative-pipelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Lakeflow Spark Declarative Pipelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/07-lakeflow-jobs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Lakeflow Jobs: Orchestrating Workloads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/08-opensharing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · OpenSharing (Formerly Delta Sharing): Sharing Data Across Organizations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/09-databricks-sql-warehouses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Databricks SQL, Warehouses & Dashboards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/10-project-governed-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — Design a Governed Data Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 · Development, ML & Operations
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 · Development, ML & Operations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/01-asset-bundles-cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Declarative Automation Bundles & CI/CD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/02-testing-pyspark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Testing PySpark & Delta Code Locally
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/03-mlflow-tracking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · MLflow: Tracking Experiments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/04-models-serving/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Model Registry & Serving
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/05-ai-functions-genie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · AI Functions, Genie Agents & AI Search
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/06-cost-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Cost Management: DBUs, Budgets & System Billing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/07-performance-photon-serverless/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Performance: Photon, Serverless & Caching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/08-table-maintenance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Table Maintenance & Predictive Optimization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/09-migration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Migrating to Databricks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/10-capstone-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Capstone — An End-to-End Platform Plan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Final Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-lakehouse-spark-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Lakehouse &amp; Spark Foundations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Lakehouse &amp; Spark Foundations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-the-lakehouse-control-plane-compute-plane-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · The Lakehouse: Control Plane, Compute Plane &amp; Storage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-workspaces-compute-types-notebooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Workspaces, Compute Types &amp; Notebooks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-spark-dataframes-transformations-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Spark DataFrames: Transformations &amp; Actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-spark-sql-built-in-functions-window-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Spark SQL, Built-in Functions &amp; Window Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-reading-writing-files-formats-schemas-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Reading &amp; Writing Files: Formats, Schemas &amp; Modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-delta-lake-tables-create-read-update-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Delta Lake Tables: Create, Read, Update, Delete
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-inside-the-delta-log-transactions-acid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Inside the Delta Log: Transactions &amp; ACID
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-time-travel-restore-vacuum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Time Travel, RESTORE &amp; VACUUM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-tables-views-volumes-where-data-lives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Tables, Views &amp; Volumes: Where Data Lives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-sales-lakehouse-you-can-run-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Sales Lakehouse You Can Run Locally
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-delta-lake-data-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Delta Lake &amp; Data Engineering
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Delta Lake &amp; Data Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-merge-upserts-the-change-data-feed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · MERGE, Upserts &amp; the Change Data Feed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-schema-enforcement-evolution-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Schema Enforcement, Evolution &amp; Constraints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-optimize-z-order-liquid-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · OPTIMIZE, Z-Order &amp; Liquid Clustering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-partitioning-file-sizes-data-skipping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Partitioning, File Sizes &amp; Data Skipping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-how-spark-executes-stages-shuffles-aqe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · How Spark Executes: Stages, Shuffles &amp; AQE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-joins-broadcast-data-skew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Joins, Broadcast &amp; Data Skew
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-structured-streaming-checkpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Structured Streaming &amp; Checkpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-auto-loader-incremental-file-ingestion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Auto Loader: Incremental File Ingestion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-the-medallion-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · The Medallion Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-bronzesilvergold-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Bronze/Silver/Gold Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-unity-catalog-pipelines-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Unity Catalog, Pipelines &amp; Sharing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Unity Catalog, Pipelines &amp; Sharing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-unity-catalog-metastore-catalogs-three-level-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Unity Catalog: Metastore, Catalogs &amp; Three-Level Names
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-privileges-ownership-grants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Privileges, Ownership &amp; Grants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-storage-credentials-external-locations-volumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Storage Credentials, External Locations &amp; Volumes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-row-filters-column-masks-abac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Row Filters, Column Masks &amp; ABAC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-lineage-audit-system-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Lineage, Audit &amp; System Tables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-lakeflow-spark-declarative-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Lakeflow Spark Declarative Pipelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-lakeflow-jobs-orchestrating-workloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Lakeflow Jobs: Orchestrating Workloads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-opensharing-formerly-delta-sharing-sharing-data-across-organizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · OpenSharing (Formerly Delta Sharing): Sharing Data Across Organizations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-databricks-sql-warehouses-dashboards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Databricks SQL, Warehouses &amp; Dashboards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-design-a-governed-data-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Design a Governed Data Platform
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-development-ml-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Development, ML &amp; Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Development, ML &amp; Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-declarative-automation-bundles-cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Declarative Automation Bundles &amp; CI/CD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-testing-pyspark-delta-code-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Testing PySpark &amp; Delta Code Locally
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-mlflow-tracking-experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · MLflow: Tracking Experiments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-model-registry-serving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Model Registry &amp; Serving
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-ai-functions-genie-agents-ai-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · AI Functions, Genie Agents &amp; AI Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-cost-management-dbus-budgets-system-billing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Cost Management: DBUs, Budgets &amp; System Billing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-performance-photon-serverless-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Performance: Photon, Serverless &amp; Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-table-maintenance-predictive-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Table Maintenance &amp; Predictive Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-migrating-to-databricks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Migrating to Databricks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-an-end-to-end-platform-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — An End-to-End Platform Plan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-a-toy-delta-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build a toy Delta log
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-with-deduplicated-cdc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MERGE with deduplicated CDC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="databricks-interview-questions-and-answers">Databricks Interview Questions and Answers<a class="headerlink" href="#databricks-interview-questions-and-answers" title="Permanent link">&para;</a></h1>
+<p><strong>179 questions</strong> with the correct answer and a short explanation, organised from beginner (Level 1) to advanced (Level 4). Every question comes from a lesson in the free Databricks Mastery Path, so you can open the lesson to go deeper.</p>
+<div class="admonition tip">
+<p class="admonition-title">Practise, don't just read</p>
+<p>Each lesson also ends with an interactive quiz, and the <a href="../quiz/">final quiz</a> tests all four levels. Try to answer each question below before reading the answer.</p>
+</div>
+<h2 id="level-1-lakehouse-spark-foundations">Level 1 · Lakehouse &amp; Spark Foundations<a class="headerlink" href="#level-1-lakehouse-spark-foundations" title="Permanent link">&para;</a></h2>
+<h3 id="01-the-lakehouse-control-plane-compute-plane-storage"><a href="../level-1/01-lakehouse-architecture/">01 · The Lakehouse: Control Plane, Compute Plane &amp; Storage</a><a class="headerlink" href="#01-the-lakehouse-control-plane-compute-plane-storage" title="Permanent link">&para;</a></h3>
+<p><strong>Q1.</strong> What is a lakehouse?</p>
+<p><strong>Answer:</strong> Open files in cheap cloud storage with a transactional layer, catalog and several engines on top, serving SQL, ETL and ML from one copy</p>
+<p>Lake cost and openness with warehouse reliability.</p>
+<p><strong>Q2.</strong> What gives Delta tables ACID transactions on object storage?</p>
+<p><strong>Answer:</strong> The transaction log (_delta_log) recording each commit</p>
+<p>The log is the table.</p>
+<p><strong>Q3.</strong> Why keep raw data in open formats like Parquet/Delta?</p>
+<p><strong>Answer:</strong> Avoids lock-in and lets many engines read the same data</p>
+<p>Openness is the pitch.</p>
+<p><strong>Q4.</strong> What separates storage from compute in a lakehouse?</p>
+<p><strong>Answer:</strong> Data lives in object storage while clusters and warehouses scale independently</p>
+<p>Elastic compute.</p>
+<h3 id="02-workspaces-compute-types-notebooks"><a href="../level-1/02-workspace-compute/">02 · Workspaces, Compute Types &amp; Notebooks</a><a class="headerlink" href="#02-workspaces-compute-types-notebooks" title="Permanent link">&para;</a></h3>
+<p><strong>Q5.</strong> Which compute fits scheduled production jobs?</p>
+<p><strong>Answer:</strong> Job clusters or serverless jobs compute, created per run and terminated after</p>
+<p>Cheaper and isolated.</p>
+<p><strong>Q6.</strong> Why is an all-purpose cluster costly for scheduled jobs?</p>
+<p><strong>Answer:</strong> It's meant for interactive work and keeps running (and billing) unless auto-terminated</p>
+<p>Choose the right compute type.</p>
+<p><strong>Q7.</strong> What does auto-termination do?</p>
+<p><strong>Answer:</strong> Shuts down idle compute to stop charges</p>
+<p>Set a short idle time.</p>
+<p><strong>Q8.</strong> What can notebooks mix?</p>
+<p><strong>Answer:</strong> Python, SQL, Scala and R using magic commands like %sql</p>
+<p>One notebook, multiple languages.</p>
+<h3 id="03-spark-dataframes-transformations-actions"><a href="../level-1/03-spark-dataframes/">03 · Spark DataFrames: Transformations &amp; Actions</a><a class="headerlink" href="#03-spark-dataframes-transformations-actions" title="Permanent link">&para;</a></h3>
+<p><strong>Q9.</strong> What is lazy evaluation in Spark?</p>
+<p><strong>Answer:</strong> Transformations build a plan and nothing runs until an action like count() or write</p>
+<p>The optimizer sees the whole plan.</p>
+<p><strong>Q10.</strong> Which is an action?</p>
+<p><strong>Answer:</strong> count(), collect() or write</p>
+<p>Transformations are lazy.</p>
+<p><strong>Q11.</strong> What does <code>df.explain()</code> show?</p>
+<p><strong>Answer:</strong> The physical plan Spark will execute</p>
+<p>Find shuffles (Exchange).</p>
+<p><strong>Q12.</strong> Why avoid <code>collect()</code> on large data?</p>
+<p><strong>Answer:</strong> It pulls everything to the driver and can run it out of memory</p>
+<p>Aggregate first.</p>
+<h3 id="04-spark-sql-built-in-functions-window-functions"><a href="../level-1/04-spark-sql-functions/">04 · Spark SQL, Built-in Functions &amp; Window Functions</a><a class="headerlink" href="#04-spark-sql-built-in-functions-window-functions" title="Permanent link">&para;</a></h3>
+<p><strong>Q13.</strong> Why can SQL produce 'wrong-but-plausible' numbers?</p>
+<p><strong>Answer:</strong> Traps like NULL handling, join row duplication and implicit casts</p>
+<p>Check row counts after joins.</p>
+<p><strong>Q14.</strong> What does COUNT(col) ignore?</p>
+<p><strong>Answer:</strong> NULL values in col (COUNT(*) counts rows)</p>
+<p>A classic trap.</p>
+<p><strong>Q15.</strong> What's a safe way to avoid division by zero?</p>
+<p><strong>Answer:</strong> try_divide or NULLIF on the denominator</p>
+<p>Avoid errors or infinities.</p>
+<p><strong>Q16.</strong> What does a window function with PARTITION BY do?</p>
+<p><strong>Answer:</strong> Computes over related rows without collapsing them</p>
+<p>Ranking and running totals.</p>
+<h3 id="05-reading-writing-files-formats-schemas-modes"><a href="../level-1/05-reading-writing-data/">05 · Reading &amp; Writing Files: Formats, Schemas &amp; Modes</a><a class="headerlink" href="#05-reading-writing-files-formats-schemas-modes" title="Permanent link">&para;</a></h3>
+<p><strong>Q17.</strong> Why define an explicit schema when reading CSV?</p>
+<p><strong>Answer:</strong> Inference can guess wrong types and costs a pass over the data</p>
+<p>Fail loudly.</p>
+<p><strong>Q18.</strong> What does PERMISSIVE parse mode do with bad rows?</p>
+<p><strong>Answer:</strong> Keeps them with nulls (and optionally a corrupt-record column)</p>
+<p>Silent nulls are risky.</p>
+<p><strong>Q19.</strong> What does FAILFAST do?</p>
+<p><strong>Answer:</strong> Errors out on the first malformed record</p>
+<p>Good for strict pipelines.</p>
+<p><strong>Q20.</strong> Which format preserves types and compresses well?</p>
+<p><strong>Answer:</strong> Parquet (or Delta)</p>
+<p>Typed columnar.</p>
+<h3 id="06-delta-lake-tables-create-read-update-delete"><a href="../level-1/06-delta-lake-basics/">06 · Delta Lake Tables: Create, Read, Update, Delete</a><a class="headerlink" href="#06-delta-lake-tables-create-read-update-delete" title="Permanent link">&para;</a></h3>
+<p><strong>Q21.</strong> What is a Delta table physically?</p>
+<p><strong>Answer:</strong> Parquet data files plus a _delta_log directory of JSON commits</p>
+<p>Open and inspectable.</p>
+<p><strong>Q22.</strong> What does UPDATE do to Delta files?</p>
+<p><strong>Answer:</strong> Writes new files and marks old ones removed in the log; files aren't edited in place</p>
+<p>Copy-on-write.</p>
+<p><strong>Q23.</strong> Which SQL commands does Delta support beyond INSERT?</p>
+<p><strong>Answer:</strong> UPDATE, DELETE and MERGE</p>
+<p>Transactional DML.</p>
+<p><strong>Q24.</strong> What does DESCRIBE HISTORY show?</p>
+<p><strong>Answer:</strong> The table's commit history (operations, versions, timestamps)</p>
+<p>Audit.</p>
+<h3 id="07-inside-the-delta-log-transactions-acid"><a href="../level-1/07-delta-log-acid/">07 · Inside the Delta Log: Transactions &amp; ACID</a><a class="headerlink" href="#07-inside-the-delta-log-transactions-acid" title="Permanent link">&para;</a></h3>
+<p><strong>Q25.</strong> What does the _delta_log contain?</p>
+<p><strong>Answer:</strong> Ordered JSON commit files (and periodic checkpoints) listing added and removed data files</p>
+<p>The log is the table.</p>
+<p><strong>Q26.</strong> How does Delta handle concurrent writers?</p>
+<p><strong>Answer:</strong> Optimistic concurrency: a conflicting commit fails and must retry</p>
+<p>ACID on object storage.</p>
+<p><strong>Q27.</strong> What's a checkpoint in Delta?</p>
+<p><strong>Answer:</strong> A Parquet snapshot of the log state that speeds up reading it</p>
+<p>Every N commits.</p>
+<p><strong>Q28.</strong> Why do data files only matter 'as far as the log mentions them'?</p>
+<p><strong>Answer:</strong> Files not referenced by the current snapshot are invisible garbage</p>
+<p>VACUUM removes them.</p>
+<h3 id="08-time-travel-restore-vacuum"><a href="../level-1/08-time-travel-restore-vacuum/">08 · Time Travel, RESTORE &amp; VACUUM</a><a class="headerlink" href="#08-time-travel-restore-vacuum" title="Permanent link">&para;</a></h3>
+<p><strong>Q29.</strong> What does time travel let you do?</p>
+<p><strong>Answer:</strong> Query a table as of a previous version or timestamp</p>
+<p>VERSION AS OF.</p>
+<p><strong>Q30.</strong> What does RESTORE do?</p>
+<p><strong>Answer:</strong> Rolls a table back to an earlier version (as a new commit)</p>
+<p>Needs the files to still exist.</p>
+<p><strong>Q31.</strong> What does VACUUM do and what's the default retention?</p>
+<p><strong>Answer:</strong> Deletes unreferenced files older than the retention threshold (7 days by default)</p>
+<p>After it, old versions can't be read.</p>
+<p><strong>Q32.</strong> Why is a very short VACUUM retention dangerous?</p>
+<p><strong>Answer:</strong> Running readers or time travel may need the removed files</p>
+<p>Keep safe retention.</p>
+<h3 id="09-tables-views-volumes-where-data-lives"><a href="../level-1/09-catalog-tables-volumes/">09 · Tables, Views &amp; Volumes: Where Data Lives</a><a class="headerlink" href="#09-tables-views-volumes-where-data-lives" title="Permanent link">&para;</a></h3>
+<p><strong>Q33.</strong> What is Unity Catalog's three-level namespace?</p>
+<p><strong>Answer:</strong> catalog.schema.table</p>
+<p>Plus volumes and functions.</p>
+<p><strong>Q34.</strong> What does DROP TABLE do for a managed table?</p>
+<p><strong>Answer:</strong> Removes the metadata and the underlying data files</p>
+<p>External tables keep data.</p>
+<p><strong>Q35.</strong> What is a volume for?</p>
+<p><strong>Answer:</strong> Governed storage for non-tabular files</p>
+<p>Files under UC governance.</p>
+<p><strong>Q36.</strong> Why avoid legacy DBFS mounts for new work?</p>
+<p><strong>Answer:</strong> Governance is weaker; use Unity Catalog volumes and external locations</p>
+<p>Migrate.</p>
+<h3 id="10-project-a-sales-lakehouse-you-can-run-locally"><a href="../level-1/10-project-local-sales-lakehouse/">10 · Project — A Sales Lakehouse You Can Run Locally</a><a class="headerlink" href="#10-project-a-sales-lakehouse-you-can-run-locally" title="Permanent link">&para;</a></h3>
+<p><strong>Q37.</strong> What does the local lakehouse project do with bad rows?</p>
+<p><strong>Answer:</strong> Quarantines them and cleans the rest into a typed Delta table</p>
+<p>Reject and report.</p>
+<p><strong>Q38.</strong> How does the project recover from a bad write?</p>
+<p><strong>Answer:</strong> Delta time travel / RESTORE</p>
+<p>Versioned tables.</p>
+<p><strong>Q39.</strong> Why use explicit schemas in the project?</p>
+<p><strong>Answer:</strong> Predictable types and loud failures</p>
+<p>Contracts.</p>
+<p><strong>Q40.</strong> What runs in Level 1 projects?</p>
+<p><strong>Answer:</strong> A local Spark session against laptop files</p>
+<p>Verified locally.</p>
+<h2 id="level-2-delta-lake-data-engineering">Level 2 · Delta Lake &amp; Data Engineering<a class="headerlink" href="#level-2-delta-lake-data-engineering" title="Permanent link">&para;</a></h2>
+<h3 id="01-merge-upserts-the-change-data-feed"><a href="../level-2/01-merge-upserts-cdf/">01 · MERGE, Upserts &amp; the Change Data Feed</a><a class="headerlink" href="#01-merge-upserts-the-change-data-feed" title="Permanent link">&para;</a></h3>
+<p><strong>Q41.</strong> What does MERGE INTO do?</p>
+<p><strong>Answer:</strong> Applies inserts, updates and deletes from a source to a target in one atomic transaction</p>
+<p>WHEN MATCHED / NOT MATCHED.</p>
+<p><strong>Q42.</strong> What's a pitfall of MERGE sources?</p>
+<p><strong>Answer:</strong> Multiple source rows matching one target row causes an error or ambiguity; deduplicate first</p>
+<p>Make keys unique.</p>
+<p><strong>Q43.</strong> What does Change Data Feed (CDF) record?</p>
+<p><strong>Answer:</strong> Row-level inserts, updates (pre/post images) and deletes per commit</p>
+<p>Downstream tables follow changes.</p>
+<p><strong>Q44.</strong> How do you enable CDF?</p>
+<p><strong>Answer:</strong> Set delta.enableChangeDataFeed = true on the table</p>
+<p>Applies to later commits.</p>
+<h3 id="02-schema-enforcement-evolution-constraints"><a href="../level-2/02-schema-enforcement-evolution/">02 · Schema Enforcement, Evolution &amp; Constraints</a><a class="headerlink" href="#02-schema-enforcement-evolution-constraints" title="Permanent link">&para;</a></h3>
+<p><strong>Q45.</strong> What does schema enforcement do on write?</p>
+<p><strong>Answer:</strong> Rejects data that doesn't match the table's schema or constraints</p>
+<p>Whole commit fails.</p>
+<p><strong>Q46.</strong> How do you add new columns deliberately?</p>
+<p><strong>Answer:</strong> Schema evolution (mergeSchema or ALTER TABLE ADD COLUMNS)</p>
+<p>Explicit.</p>
+<p><strong>Q47.</strong> What can silently lose data around schema?</p>
+<p><strong>Answer:</strong> Casting or overwriting with the wrong schema</p>
+<p>Be explicit.</p>
+<p><strong>Q48.</strong> What do CHECK constraints do?</p>
+<p><strong>Answer:</strong> Reject writes violating a boolean condition</p>
+<p>Data quality at the table.</p>
+<h3 id="03-optimize-z-order-liquid-clustering"><a href="../level-2/03-optimize-zorder-clustering/">03 · OPTIMIZE, Z-Order &amp; Liquid Clustering</a><a class="headerlink" href="#03-optimize-z-order-liquid-clustering" title="Permanent link">&para;</a></h3>
+<p><strong>Q49.</strong> What does OPTIMIZE do?</p>
+<p><strong>Answer:</strong> Compacts many small files into larger ones</p>
+<p>Better scan performance.</p>
+<p><strong>Q50.</strong> What does ZORDER BY (or clustering) improve?</p>
+<p><strong>Answer:</strong> Data skipping by co-locating related values in files</p>
+<p>Filter on those columns.</p>
+<p><strong>Q51.</strong> What's liquid clustering?</p>
+<p><strong>Answer:</strong> A flexible, incremental clustering method replacing partitioning/ZORDER</p>
+<p>CLUSTER BY.</p>
+<p><strong>Q52.</strong> Why do many tiny commits hurt?</p>
+<p><strong>Answer:</strong> Small files ruin data skipping and add metadata overhead</p>
+<p>Compact.</p>
+<h3 id="04-partitioning-file-sizes-data-skipping"><a href="../level-2/04-partitioning-file-layout/">04 · Partitioning, File Sizes &amp; Data Skipping</a><a class="headerlink" href="#04-partitioning-file-sizes-data-skipping" title="Permanent link">&para;</a></h3>
+<p><strong>Q53.</strong> When does partitioning help?</p>
+<p><strong>Answer:</strong> Low-cardinality columns that queries filter on, with large partitions</p>
+<p>Avoid over-partitioning.</p>
+<p><strong>Q54.</strong> What's the 'small files' problem?</p>
+<p><strong>Answer:</strong> Too many tiny files slow reads and writes</p>
+<p>Partition less, optimize.</p>
+<p><strong>Q55.</strong> Which columns get data-skipping stats by default?</p>
+<p><strong>Answer:</strong> The first 32 columns</p>
+<p>Order columns wisely.</p>
+<p><strong>Q56.</strong> What does partition pruning do?</p>
+<p><strong>Answer:</strong> Skips partitions that can't match the filter</p>
+<p>Needs filter on the partition column.</p>
+<h3 id="05-how-spark-executes-stages-shuffles-aqe"><a href="../level-2/05-spark-execution-aqe/">05 · How Spark Executes: Stages, Shuffles &amp; AQE</a><a class="headerlink" href="#05-how-spark-executes-stages-shuffles-aqe" title="Permanent link">&para;</a></h3>
+<p><strong>Q57.</strong> In Spark UI vocabulary, what is a stage boundary caused by?</p>
+<p><strong>Answer:</strong> A shuffle (wide transformation)</p>
+<p>Exchange in plans.</p>
+<p><strong>Q58.</strong> What does AQE (adaptive query execution) do?</p>
+<p><strong>Answer:</strong> Re-optimizes the plan at runtime using real statistics (e.g. coalescing partitions, switching joins)</p>
+<p>Enabled by default.</p>
+<p><strong>Q59.</strong> What's a task?</p>
+<p><strong>Answer:</strong> The unit of work on one partition</p>
+<p>Parallelism = partitions.</p>
+<p><strong>Q60.</strong> Why do shuffles matter?</p>
+<p><strong>Answer:</strong> They move data across the network and dominate cost</p>
+<p>Minimize them.</p>
+<h3 id="06-joins-broadcast-data-skew"><a href="../level-2/06-joins-skew-broadcast/">06 · Joins, Broadcast &amp; Data Skew</a><a class="headerlink" href="#06-joins-broadcast-data-skew" title="Permanent link">&para;</a></h3>
+<p><strong>Q61.</strong> What causes data skew in a join?</p>
+<p><strong>Answer:</strong> One key having far more rows than others, overloading one task</p>
+<p>Salting, AQE skew join.</p>
+<p><strong>Q62.</strong> When use a broadcast join?</p>
+<p><strong>Answer:</strong> When one side is small enough to send to every executor</p>
+<p>Avoids shuffle.</p>
+<p><strong>Q63.</strong> How can you spot a skewed task in Spark UI?</p>
+<p><strong>Answer:</strong> One task much slower/larger than the median</p>
+<p>Look at task metrics.</p>
+<p><strong>Q64.</strong> What does a join on a mismatched key type risk?</p>
+<p><strong>Answer:</strong> Implicit casts causing no matches or slow plans</p>
+<p>Cast deliberately.</p>
+<h3 id="07-structured-streaming-checkpoints"><a href="../level-2/07-structured-streaming/">07 · Structured Streaming &amp; Checkpoints</a><a class="headerlink" href="#07-structured-streaming-checkpoints" title="Permanent link">&para;</a></h3>
+<p><strong>Q65.</strong> How does Structured Streaming treat a stream?</p>
+<p><strong>Answer:</strong> As an unbounded table processed incrementally</p>
+<p>Same DataFrame API.</p>
+<p><strong>Q66.</strong> What is a checkpoint location for?</p>
+<p><strong>Answer:</strong> Storing progress and state so the query restarts without loss or duplication</p>
+<p>Required for fault tolerance.</p>
+<p><strong>Q67.</strong> What is a trigger like availableNow?</p>
+<p><strong>Answer:</strong> Process all available data then stop (incremental batch)</p>
+<p>Cost-efficient.</p>
+<p><strong>Q68.</strong> What does a watermark do?</p>
+<p><strong>Answer:</strong> Bounds how late data is accepted for stateful windows</p>
+<p>Limits state.</p>
+<h3 id="08-auto-loader-incremental-file-ingestion"><a href="../level-2/08-auto-loader/">08 · Auto Loader: Incremental File Ingestion</a><a class="headerlink" href="#08-auto-loader-incremental-file-ingestion" title="Permanent link">&para;</a></h3>
+<p><strong>Q69.</strong> What does Auto Loader provide?</p>
+<p><strong>Answer:</strong> Incremental, exactly-once file ingestion with schema inference and evolution</p>
+<p>cloudFiles source.</p>
+<p><strong>Q70.</strong> Why is directory listing of a million files a problem?</p>
+<p><strong>Answer:</strong> It's slow and costly; Auto Loader can use file notification mode</p>
+<p>Scalable discovery.</p>
+<p><strong>Q71.</strong> What does schema evolution mode 'rescue' do?</p>
+<p><strong>Answer:</strong> Captures unexpected columns in a _rescued_data column</p>
+<p>No silent loss.</p>
+<p><strong>Q72.</strong> Where does Auto Loader track processed files?</p>
+<p><strong>Answer:</strong> In its checkpoint (RocksDB state)</p>
+<p>Exactly once.</p>
+<h3 id="09-the-medallion-architecture"><a href="../level-2/09-medallion-architecture/">09 · The Medallion Architecture</a><a class="headerlink" href="#09-the-medallion-architecture" title="Permanent link">&para;</a></h3>
+<p><strong>Q73.</strong> What are the medallion layers?</p>
+<p><strong>Answer:</strong> Bronze (raw), silver (cleaned/conformed), gold (business-ready)</p>
+<p>Progressive quality.</p>
+<p><strong>Q74.</strong> Why never overwrite bronze?</p>
+<p><strong>Answer:</strong> It's the replayable source of truth</p>
+<p>Reprocess from it.</p>
+<p><strong>Q75.</strong> Where should validation live?</p>
+<p><strong>Answer:</strong> In one place, typically the bronze-to-silver step</p>
+<p>Single responsibility.</p>
+<p><strong>Q76.</strong> What should gold tables be?</p>
+<p><strong>Answer:</strong> Stable, trustworthy, business-aligned aggregates</p>
+<p>Consumers rely on them.</p>
+<h3 id="10-project-a-bronzesilvergold-pipeline"><a href="../level-2/10-project-medallion-pipeline/">10 · Project — A Bronze/Silver/Gold Pipeline</a><a class="headerlink" href="#10-project-a-bronzesilvergold-pipeline" title="Permanent link">&para;</a></h3>
+<p><strong>Q77.</strong> What does the medallion project show?</p>
+<p><strong>Answer:</strong> End-to-end bronze, silver and gold with quality checks</p>
+<p>A full pipeline.</p>
+<p><strong>Q78.</strong> How do you make reruns safe?</p>
+<p><strong>Answer:</strong> Idempotent writes via MERGE or partition overwrite</p>
+<p>No duplicates.</p>
+<p><strong>Q79.</strong> What do you do with invalid records?</p>
+<p><strong>Answer:</strong> Quarantine them with reasons</p>
+<p>Audit trail.</p>
+<p><strong>Q80.</strong> How do you verify the pipeline?</p>
+<p><strong>Answer:</strong> Row counts and expectations between layers</p>
+<p>Reconcile.</p>
+<h2 id="level-3-unity-catalog-pipelines-sharing">Level 3 · Unity Catalog, Pipelines &amp; Sharing<a class="headerlink" href="#level-3-unity-catalog-pipelines-sharing" title="Permanent link">&para;</a></h2>
+<h3 id="01-unity-catalog-metastore-catalogs-three-level-names"><a href="../level-3/01-unity-catalog-model/">01 · Unity Catalog: Metastore, Catalogs &amp; Three-Level Names</a><a class="headerlink" href="#01-unity-catalog-metastore-catalogs-three-level-names" title="Permanent link">&para;</a></h3>
+<p><strong>Q81.</strong> What does Unity Catalog centralize?</p>
+<p><strong>Answer:</strong> Governance: permissions, lineage, audit and discovery across workspaces</p>
+<p>One metastore per region.</p>
+<p><strong>Q82.</strong> What are the UC securable objects hierarchy?</p>
+<p><strong>Answer:</strong> Metastore, catalog, schema, then tables/views/volumes/functions</p>
+<p>Privileges inherit down.</p>
+<p><strong>Q83.</strong> Why use groups for grants?</p>
+<p><strong>Answer:</strong> Easier management than granting to individuals</p>
+<p>Least privilege.</p>
+<p><strong>Q84.</strong> What does the metastore bind to?</p>
+<p><strong>Answer:</strong> A region and multiple workspaces</p>
+<p>Shared governance.</p>
+<h3 id="02-privileges-ownership-grants"><a href="../level-3/02-privileges-grants/">02 · Privileges, Ownership &amp; Grants</a><a class="headerlink" href="#02-privileges-ownership-grants" title="Permanent link">&para;</a></h3>
+<p><strong>Q85.</strong> What privilege is needed to read a table?</p>
+<p><strong>Answer:</strong> SELECT on the table, USE SCHEMA and USE CATALOG on parents</p>
+<p>Parents need USE.</p>
+<p><strong>Q86.</strong> What does GRANT do?</p>
+<p><strong>Answer:</strong> Gives a principal a privilege on a securable</p>
+<p>REVOKE removes.</p>
+<p><strong>Q87.</strong> What's the best practice for ownership?</p>
+<p><strong>Answer:</strong> Owned by a group/service principal, not a person</p>
+<p>Avoid orphaned ownership.</p>
+<p><strong>Q88.</strong> What does <code>ALL PRIVILEGES</code> risk?</p>
+<p><strong>Answer:</strong> Over-permissioning beyond least privilege</p>
+<p>Grant narrowly.</p>
+<h3 id="03-storage-credentials-external-locations-volumes"><a href="../level-3/03-external-locations-volumes/">03 · Storage Credentials, External Locations &amp; Volumes</a><a class="headerlink" href="#03-storage-credentials-external-locations-volumes" title="Permanent link">&para;</a></h3>
+<p><strong>Q89.</strong> What is an external location?</p>
+<p><strong>Answer:</strong> A UC object tying a cloud storage path to a storage credential</p>
+<p>Governed access.</p>
+<p><strong>Q90.</strong> Managed vs external tables: what happens on DROP?</p>
+<p><strong>Answer:</strong> Managed drops data; external keeps the files</p>
+<p>Choose deliberately.</p>
+<p><strong>Q91.</strong> What do volumes govern?</p>
+<p><strong>Answer:</strong> Access to arbitrary files like images and CSVs</p>
+<p>Path /Volumes/catalog/schema/vol.</p>
+<p><strong>Q92.</strong> Why not grant raw cloud storage access to users?</p>
+<p><strong>Answer:</strong> It bypasses Unity Catalog governance</p>
+<p>Use UC objects.</p>
+<h3 id="04-row-filters-column-masks-abac"><a href="../level-3/04-row-filters-column-masks/">04 · Row Filters, Column Masks &amp; ABAC</a><a class="headerlink" href="#04-row-filters-column-masks-abac" title="Permanent link">&para;</a></h3>
+<p><strong>Q93.</strong> What does a row filter do?</p>
+<p><strong>Answer:</strong> Restricts which rows a user can see based on a function</p>
+<p>Policy attached to the table.</p>
+<p><strong>Q94.</strong> What does a column mask do?</p>
+<p><strong>Answer:</strong> Transforms a column's values for users lacking permission</p>
+<p>E.g. show last 4 digits.</p>
+<p><strong>Q95.</strong> Why use these over copies of data?</p>
+<p><strong>Answer:</strong> One governed copy with dynamic policies</p>
+<p>Less drift.</p>
+<p><strong>Q96.</strong> What function checks group membership in a policy?</p>
+<p><strong>Answer:</strong> is_account_group_member()</p>
+<p>Used in UDFs.</p>
+<h3 id="05-lineage-audit-system-tables"><a href="../level-3/05-lineage-system-tables/">05 · Lineage, Audit &amp; System Tables</a><a class="headerlink" href="#05-lineage-audit-system-tables" title="Permanent link">&para;</a></h3>
+<p><strong>Q97.</strong> What does lineage show?</p>
+<p><strong>Answer:</strong> Upstream sources and downstream consumers of tables and columns</p>
+<p>Impact analysis.</p>
+<p><strong>Q98.</strong> What are system tables?</p>
+<p><strong>Answer:</strong> Databricks-managed tables with audit, billing and usage data</p>
+<p>system.billing.usage.</p>
+<p><strong>Q99.</strong> How can you find who accessed a table?</p>
+<p><strong>Answer:</strong> Query audit logs in system tables</p>
+<p>Governance evidence.</p>
+<p><strong>Q100.</strong> Why is lineage useful before changing a table?</p>
+<p><strong>Answer:</strong> See what downstream assets would break</p>
+<p>Impact.</p>
+<h3 id="06-lakeflow-spark-declarative-pipelines"><a href="../level-3/06-lakeflow-declarative-pipelines/">06 · Lakeflow Spark Declarative Pipelines</a><a class="headerlink" href="#06-lakeflow-spark-declarative-pipelines" title="Permanent link">&para;</a></h3>
+<p><strong>Q101.</strong> What do Lakeflow Declarative Pipelines (formerly DLT) let you do?</p>
+<p><strong>Answer:</strong> Declare tables and expectations; the engine manages orchestration, retries and dependencies</p>
+<p>Declarative ETL.</p>
+<p><strong>Q102.</strong> What are expectations?</p>
+<p><strong>Answer:</strong> Data quality rules with actions (warn, drop, fail)</p>
+<p>EXPECT ... ON VIOLATION.</p>
+<p><strong>Q103.</strong> What's the difference between streaming tables and materialized views?</p>
+<p><strong>Answer:</strong> Streaming tables process new data incrementally; materialized views compute results of a query</p>
+<p>Choose by pattern.</p>
+<p><strong>Q104.</strong> What does the pipeline infer automatically?</p>
+<p><strong>Answer:</strong> Dependency order from references between datasets</p>
+<p>No manual DAG.</p>
+<h3 id="07-lakeflow-jobs-orchestrating-workloads"><a href="../level-3/07-lakeflow-jobs/">07 · Lakeflow Jobs: Orchestrating Workloads</a><a class="headerlink" href="#07-lakeflow-jobs-orchestrating-workloads" title="Permanent link">&para;</a></h3>
+<p><strong>Q105.</strong> What do Lakeflow Jobs orchestrate?</p>
+<p><strong>Answer:</strong> Tasks like notebooks, SQL, pipelines and Python wheels with dependencies and schedules</p>
+<p>Multi-task workflows.</p>
+<p><strong>Q106.</strong> How do you handle failures in a Job?</p>
+<p><strong>Answer:</strong> Retries, alerts and conditional tasks</p>
+<p>Operational.</p>
+<p><strong>Q107.</strong> Why use job parameters?</p>
+<p><strong>Answer:</strong> Reuse the same job for different inputs/dates</p>
+<p>Parameterize.</p>
+<p><strong>Q108.</strong> What compute should production Jobs use?</p>
+<p><strong>Answer:</strong> Job clusters or serverless, not shared interactive clusters</p>
+<p>Isolation and cost.</p>
+<h3 id="08-opensharing-formerly-delta-sharing-sharing-data-across-organizations"><a href="../level-3/08-opensharing/">08 · OpenSharing (Formerly Delta Sharing): Sharing Data Across Organizations</a><a class="headerlink" href="#08-opensharing-formerly-delta-sharing-sharing-data-across-organizations" title="Permanent link">&para;</a></h3>
+<p><strong>Q109.</strong> What does Delta Sharing do?</p>
+<p><strong>Answer:</strong> Shares live data with other organizations over an open protocol without copying</p>
+<p>Recipients can use any client.</p>
+<p><strong>Q110.</strong> Who controls what is shared?</p>
+<p><strong>Answer:</strong> The provider, via shares and recipients</p>
+<p>Governed.</p>
+<p><strong>Q111.</strong> Does the recipient need Databricks?</p>
+<p><strong>Answer:</strong> No: open sharing works with other clients</p>
+<p>Databricks-to-Databricks is richer.</p>
+<p><strong>Q112.</strong> What is a share?</p>
+<p><strong>Answer:</strong> A named collection of tables/views shared with recipients</p>
+<p>Grant access.</p>
+<h3 id="09-databricks-sql-warehouses-dashboards"><a href="../level-3/09-databricks-sql-warehouses/">09 · Databricks SQL, Warehouses &amp; Dashboards</a><a class="headerlink" href="#09-databricks-sql-warehouses-dashboards" title="Permanent link">&para;</a></h3>
+<p><strong>Q113.</strong> What are SQL warehouses for?</p>
+<p><strong>Answer:</strong> BI and SQL workloads with elastic, optimized compute</p>
+<p>Serverless or pro.</p>
+<p><strong>Q114.</strong> What drives warehouse cost?</p>
+<p><strong>Answer:</strong> Size and running time (DBUs)</p>
+<p>Auto-stop.</p>
+<p><strong>Q115.</strong> What improves dashboard speed?</p>
+<p><strong>Answer:</strong> Caching, right-sizing and well-modeled gold tables</p>
+<p>Design for BI.</p>
+<p><strong>Q116.</strong> What's a warehouse's auto-stop for?</p>
+<p><strong>Answer:</strong> Stop charges when idle</p>
+<p>Set low.</p>
+<h3 id="10-project-design-a-governed-data-platform"><a href="../level-3/10-project-governed-platform/">10 · Project — Design a Governed Data Platform</a><a class="headerlink" href="#10-project-design-a-governed-data-platform" title="Permanent link">&para;</a></h3>
+<p><strong>Q117.</strong> What does the governed platform project combine?</p>
+<p><strong>Answer:</strong> Unity Catalog, grants, masks/filters, lineage and jobs</p>
+<p>End to end.</p>
+<p><strong>Q118.</strong> How do you prove least privilege works?</p>
+<p><strong>Answer:</strong> Test access as different principals</p>
+<p>Verify.</p>
+<p><strong>Q119.</strong> What should be automated?</p>
+<p><strong>Answer:</strong> Grants and objects as code</p>
+<p>Reproducible.</p>
+<p><strong>Q120.</strong> What do you document?</p>
+<p><strong>Answer:</strong> Owners, classifications and data contracts</p>
+<p>Governance.</p>
+<h2 id="level-4-development-ml-operations">Level 4 · Development, ML &amp; Operations<a class="headerlink" href="#level-4-development-ml-operations" title="Permanent link">&para;</a></h2>
+<h3 id="01-declarative-automation-bundles-cicd"><a href="../level-4/01-asset-bundles-cicd/">01 · Declarative Automation Bundles &amp; CI/CD</a><a class="headerlink" href="#01-declarative-automation-bundles-cicd" title="Permanent link">&para;</a></h3>
+<p><strong>Q121.</strong> What are Databricks Asset Bundles?</p>
+<p><strong>Answer:</strong> Infrastructure-as-code (YAML) for jobs, pipelines and resources deployed via CLI/CI</p>
+<p>databricks bundle deploy.</p>
+<p><strong>Q122.</strong> Why use bundles in CI/CD?</p>
+<p><strong>Answer:</strong> Reproducible, reviewed deployments across dev/staging/prod targets</p>
+<p>Targets.</p>
+<p><strong>Q123.</strong> What should differ per target?</p>
+<p><strong>Answer:</strong> Workspace, catalog and parameters</p>
+<p>Same code, different config.</p>
+<p><strong>Q124.</strong> What should CI run?</p>
+<p><strong>Answer:</strong> Validation, unit tests and deployment to a test target</p>
+<p>Gate merges.</p>
+<h3 id="02-testing-pyspark-delta-code-locally"><a href="../level-4/02-testing-pyspark/">02 · Testing PySpark &amp; Delta Code Locally</a><a class="headerlink" href="#02-testing-pyspark-delta-code-locally" title="Permanent link">&para;</a></h3>
+<p><strong>Q125.</strong> How do you unit test PySpark transforms?</p>
+<p><strong>Answer:</strong> Pure functions on small local DataFrames with expected outputs</p>
+<p>pytest + local session.</p>
+<p><strong>Q126.</strong> Why keep transform logic in importable modules?</p>
+<p><strong>Answer:</strong> Testable outside notebooks</p>
+<p>Separation.</p>
+<p><strong>Q127.</strong> What should tests avoid?</p>
+<p><strong>Answer:</strong> Dependence on large data or cloud state</p>
+<p>Fast and deterministic.</p>
+<p><strong>Q128.</strong> What does chispa/assertDataFrameEqual help with?</p>
+<p><strong>Answer:</strong> Comparing DataFrames in tests</p>
+<p>Clear diffs.</p>
+<h3 id="03-mlflow-tracking-experiments"><a href="../level-4/03-mlflow-tracking/">03 · MLflow: Tracking Experiments</a><a class="headerlink" href="#03-mlflow-tracking-experiments" title="Permanent link">&para;</a></h3>
+<p><strong>Q129.</strong> What does MLflow Tracking record?</p>
+<p><strong>Answer:</strong> Parameters, metrics, artifacts and code version per run</p>
+<p>Reproducibility.</p>
+<p><strong>Q130.</strong> What's the model registry for?</p>
+<p><strong>Answer:</strong> Versioning and stage/alias management of models (in UC)</p>
+<p>Promotion workflow.</p>
+<p><strong>Q131.</strong> Why log parameters and metrics?</p>
+<p><strong>Answer:</strong> Compare runs and reproduce results</p>
+<p>Experiment management.</p>
+<p><strong>Q132.</strong> What's an MLflow run?</p>
+<p><strong>Answer:</strong> One execution of training code with its logged info</p>
+<p>Grouped in experiments.</p>
+<h3 id="04-model-registry-serving"><a href="../level-4/04-models-serving/">04 · Model Registry &amp; Serving</a><a class="headerlink" href="#04-model-registry-serving" title="Permanent link">&para;</a></h3>
+<p><strong>Q133.</strong> What does Model Serving provide?</p>
+<p><strong>Answer:</strong> Managed REST endpoints for models with autoscaling</p>
+<p>Real-time inference.</p>
+<p><strong>Q134.</strong> What should you monitor on endpoints?</p>
+<p><strong>Answer:</strong> Latency, errors, throughput and input/output quality</p>
+<p>Operate it.</p>
+<p><strong>Q135.</strong> How do you roll out a new model safely?</p>
+<p><strong>Answer:</strong> Traffic splitting/canary with rollback</p>
+<p>Progressive.</p>
+<p><strong>Q136.</strong> What does scale-to-zero trade off?</p>
+<p><strong>Answer:</strong> Cost savings versus cold-start latency</p>
+<p>Choose per SLA.</p>
+<h3 id="05-ai-functions-genie-agents-ai-search"><a href="../level-4/05-ai-functions-genie/">05 · AI Functions, Genie Agents &amp; AI Search</a><a class="headerlink" href="#05-ai-functions-genie-agents-ai-search" title="Permanent link">&para;</a></h3>
+<p><strong>Q137.</strong> What are AI Functions in Databricks SQL?</p>
+<p><strong>Answer:</strong> SQL functions that call models for tasks like classification and summarization on table data</p>
+<p>ai_query etc.</p>
+<p><strong>Q138.</strong> What is Genie?</p>
+<p><strong>Answer:</strong> A natural-language interface to ask questions of governed data</p>
+<p>Needs good metadata.</p>
+<p><strong>Q139.</strong> What makes natural-language analytics reliable?</p>
+<p><strong>Answer:</strong> Well-modeled, documented tables and verified answers</p>
+<p>Curate.</p>
+<p><strong>Q140.</strong> Why verify AI-generated SQL/results?</p>
+<p><strong>Answer:</strong> Models can be wrong or hallucinate</p>
+<p>Human review.</p>
+<h3 id="06-cost-management-dbus-budgets-system-billing"><a href="../level-4/06-cost-management/">06 · Cost Management: DBUs, Budgets &amp; System Billing</a><a class="headerlink" href="#06-cost-management-dbus-budgets-system-billing" title="Permanent link">&para;</a></h3>
+<p><strong>Q141.</strong> How do you attribute cost to teams?</p>
+<p><strong>Answer:</strong> Tagging compute and using billing system tables</p>
+<p>Chargeback.</p>
+<p><strong>Q142.</strong> What are top cost drivers?</p>
+<p><strong>Answer:</strong> Idle compute, oversized clusters and inefficient queries</p>
+<p>Optimize.</p>
+<p><strong>Q143.</strong> What do budgets and policies do?</p>
+<p><strong>Answer:</strong> Cap spend and constrain compute configuration</p>
+<p>Cluster policies.</p>
+<p><strong>Q144.</strong> Why prefer serverless/job compute for batch?</p>
+<p><strong>Answer:</strong> Pay only while running</p>
+<p>Lower waste.</p>
+<h3 id="07-performance-photon-serverless-caching"><a href="../level-4/07-performance-photon-serverless/">07 · Performance: Photon, Serverless &amp; Caching</a><a class="headerlink" href="#07-performance-photon-serverless-caching" title="Permanent link">&para;</a></h3>
+<p><strong>Q145.</strong> What is Photon?</p>
+<p><strong>Answer:</strong> A vectorized native query engine that speeds SQL and DataFrame workloads</p>
+<p>Often cheaper per job.</p>
+<p><strong>Q146.</strong> What does serverless compute remove?</p>
+<p><strong>Answer:</strong> Cluster management and startup waits</p>
+<p>Elastic.</p>
+<p><strong>Q147.</strong> What should you do before tuning?</p>
+<p><strong>Answer:</strong> Measure with query profile and Spark UI</p>
+<p>Evidence.</p>
+<p><strong>Q148.</strong> What's predictive optimization?</p>
+<p><strong>Answer:</strong> Automatic maintenance like OPTIMIZE and VACUUM for UC managed tables</p>
+<p>Hands-off upkeep.</p>
+<h3 id="08-table-maintenance-predictive-optimization"><a href="../level-4/08-table-maintenance/">08 · Table Maintenance &amp; Predictive Optimization</a><a class="headerlink" href="#08-table-maintenance-predictive-optimization" title="Permanent link">&para;</a></h3>
+<p><strong>Q149.</strong> Which maintenance tasks matter for Delta tables?</p>
+<p><strong>Answer:</strong> OPTIMIZE (compaction), VACUUM and statistics</p>
+<p>Keep reads fast.</p>
+<p><strong>Q150.</strong> What does VACUUM free?</p>
+<p><strong>Answer:</strong> Storage from unreferenced old files</p>
+<p>Mind time-travel needs.</p>
+<p><strong>Q151.</strong> How often compact streaming tables?</p>
+<p><strong>Answer:</strong> Regularly, since many small commits create small files</p>
+<p>Or use auto compaction.</p>
+<p><strong>Q152.</strong> How do you check table health?</p>
+<p><strong>Answer:</strong> DESCRIBE DETAIL and file-count/size metrics</p>
+<p>Monitor.</p>
+<h3 id="09-migrating-to-databricks"><a href="../level-4/09-migration/">09 · Migrating to Databricks</a><a class="headerlink" href="#09-migrating-to-databricks" title="Permanent link">&para;</a></h3>
+<p><strong>Q153.</strong> What's a safe migration approach?</p>
+<p><strong>Answer:</strong> Inventory, migrate in phases, run old and new in parallel and validate</p>
+<p>Reduce risk.</p>
+<p><strong>Q154.</strong> What changes when moving from Hive metastore to UC?</p>
+<p><strong>Answer:</strong> Objects become three-level and permissions move to UC grants</p>
+<p>Plan upgrades.</p>
+<p><strong>Q155.</strong> How do you validate a migrated pipeline?</p>
+<p><strong>Answer:</strong> Compare outputs and row counts against the legacy system</p>
+<p>Reconcile.</p>
+<p><strong>Q156.</strong> What should be decommissioned last?</p>
+<p><strong>Answer:</strong> Legacy sources after consumers are verified on the new system</p>
+<p>Cutover carefully.</p>
+<h3 id="10-capstone-an-end-to-end-platform-plan"><a href="../level-4/10-capstone-platform/">10 · Capstone — An End-to-End Platform Plan</a><a class="headerlink" href="#10-capstone-an-end-to-end-platform-plan" title="Permanent link">&para;</a></h3>
+<p><strong>Q157.</strong> What does the capstone integrate?</p>
+<p><strong>Answer:</strong> Ingestion, medallion, governance, CI/CD, ML/AI and cost controls on one platform</p>
+<p>Production lakehouse.</p>
+<p><strong>Q158.</strong> How do you prove production readiness?</p>
+<p><strong>Answer:</strong> Tests, monitoring, runbooks and failure drills</p>
+<p>Operate.</p>
+<p><strong>Q159.</strong> What should documentation cover?</p>
+<p><strong>Answer:</strong> Architecture, ownership and operations</p>
+<p>Onboarding.</p>
+<p><strong>Q160.</strong> What guards against cost surprises?</p>
+<p><strong>Answer:</strong> Tags, budgets, policies and alerts</p>
+<p>FinOps.</p>
+<h2 id="mixed-questions-across-all-levels">Mixed questions across all levels<a class="headerlink" href="#mixed-questions-across-all-levels" title="Permanent link">&para;</a></h2>
+<p><strong>Q161.</strong> What makes a Delta table different from a plain folder of Parquet files?</p>
+<p><strong>Answer:</strong> A transaction log that defines which files make up each version, giving ACID commits and time travel</p>
+<p>The log is the table.</p>
+<p><strong>Q162.</strong> A job overwrote a Delta table with bad data an hour ago. What's the fastest recovery?</p>
+<p><strong>Answer:</strong> RESTORE the table to the previous version (if the files haven't been vacuumed)</p>
+<p>Time travel plus RESTORE.</p>
+<p><strong>Q163.</strong> After VACUUM with a short retention, a query <code>VERSION AS OF 5</code> fails. Why?</p>
+<p><strong>Answer:</strong> The data files for that version were deleted as unreferenced</p>
+<p>Retention governs how far back you can go.</p>
+<p><strong>Q164.</strong> A MERGE fails saying multiple source rows matched one target row. What's the fix?</p>
+<p><strong>Answer:</strong> Deduplicate the source to one row per key (e.g. keep the latest) before merging</p>
+<p>Make the merge deterministic.</p>
+<p><strong>Q165.</strong> An append fails with a schema mismatch error. Is that a bug?</p>
+<p><strong>Answer:</strong> No: schema enforcement is protecting the table; evolve the schema explicitly if the change is intended</p>
+<p>Enforcement fails loudly.</p>
+<p><strong>Q166.</strong> Queries filter on customer_id but scan the whole table. What helps?</p>
+<p><strong>Answer:</strong> OPTIMIZE with ZORDER or liquid clustering on customer_id so data skipping can work</p>
+<p>High-cardinality columns are poor partition keys.</p>
+<p><strong>Q167.</strong> A table partitioned by user_id has millions of tiny files. What went wrong?</p>
+<p><strong>Answer:</strong> Over-partitioning on a high-cardinality column</p>
+<p>Partition on low-cardinality columns or use clustering.</p>
+<p><strong>Q168.</strong> In a Spark job one task runs for an hour while the rest finish in seconds. What's the likely cause and a fix?</p>
+<p><strong>Answer:</strong> Skew on a join key; use AQE skew handling, salting or broadcast the small side</p>
+<p>Look at the Spark UI task metrics.</p>
+<p><strong>Q169.</strong> Why prefer Auto Loader over listing a directory every minute?</p>
+<p><strong>Answer:</strong> It tracks files incrementally with exactly-once ingestion and handles schema evolution (rescued data)</p>
+<p>Scales to millions of files.</p>
+<p><strong>Q170.</strong> A streaming query is restarted and reprocesses old data. What was missing?</p>
+<p><strong>Answer:</strong> A stable checkpoint location</p>
+<p>Checkpoints store progress.</p>
+<p><strong>Q171.</strong> Why keep bronze tables append-only and untouched?</p>
+<p><strong>Answer:</strong> They're the replayable source of truth if silver logic changes</p>
+<p>Medallion principle.</p>
+<p><strong>Q172.</strong> A column should show only the last 4 digits to non-privileged users. What's the Unity Catalog feature?</p>
+<p><strong>Answer:</strong> A column mask on the table</p>
+<p>Dynamic, policy-based.</p>
+<p><strong>Q173.</strong> Analysts see all regions but should see only their own. What do you use?</p>
+<p><strong>Answer:</strong> A row filter function based on group membership</p>
+<p>One governed table.</p>
+<p><strong>Q174.</strong> A user can't read a table even though they have SELECT on it. What else is required?</p>
+<p><strong>Answer:</strong> USE CATALOG and USE SCHEMA on the parents</p>
+<p>Privileges are hierarchical.</p>
+<p><strong>Q175.</strong> What happens on DROP TABLE for an external table?</p>
+<p><strong>Answer:</strong> Metadata is removed but the underlying files remain</p>
+<p>Managed tables delete data.</p>
+<p><strong>Q176.</strong> A scheduled nightly job runs on an always-on all-purpose cluster. What's the issue?</p>
+<p><strong>Answer:</strong> Wasted spend and shared interference; use job/serverless compute</p>
+<p>Right-size compute.</p>
+<p><strong>Q177.</strong> A deployment must be identical across dev, staging and prod with only config changing. What do you use?</p>
+<p><strong>Answer:</strong> Declarative Asset Bundles (databricks bundle deploy) with per-target settings</p>
+<p>IaC and CI/CD.</p>
+<p><strong>Q178.</strong> A dashboard is slow and costly. Which is the best first check?</p>
+<p><strong>Answer:</strong> Profile the query and verify gold tables and warehouse sizing/auto-stop</p>
+<p>Measure first.</p>
+<p><strong>Q179.</strong> Which is the right way to share data with an external partner without copying it?</p>
+<p><strong>Answer:</strong> Delta Sharing with a share and recipient</p>
+<p>Governed, live.</p>
+<h2 id="practical-coding-questions">Practical coding questions<a class="headerlink" href="#practical-coding-questions" title="Permanent link">&para;</a></h2>
+<h3 id="build-a-toy-delta-log">Build a toy Delta log<a class="headerlink" href="#build-a-toy-delta-log" title="Permanent link">&para;</a></h3>
+<p>Implement MiniDelta: commit() records added and removed files, snapshot(version) replays the log, read() returns the rows of live files, and vacuum() deletes physical files not needed by the latest version. Show current data, time travel to v1, and what vacuum breaks.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>class MiniDelta:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    """A toy transaction log: each commit lists files it ADDs and REMOVEs."""
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    def __init__(self):
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        self.log = []                    # log[v] = (adds, removes)
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        self.files = {}                  # file name -&gt; list of rows
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    def commit(self, adds=None, removes=()):
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        # store the new files, append (added names, removed names) to the log,
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        # and return the new version number
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        return 0
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    def snapshot(self, version=None):
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        # replay the log up to `version` (default: latest) and return the live file names
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        return []
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    def read(self, version=None):
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        # all rows from the live files of that version, sorted
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        return []
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    def vacuum(self, keep_versions=1):
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        # delete physical files not needed by the latest `keep_versions` versions
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>        pass
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>t = MiniDelta()
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>t.commit({"f1": [1, 2, 3]})                         # v0
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>t.commit({"f2": [4, 5]})                            # v1
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>t.commit({"f3": [1, 2, 3, 40, 5]}, removes=["f1", "f2"])   # v2 (a rewrite)
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>print("current:", t.read())
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>print("v1:", t.read(1))
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>t.vacuum()
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>print("files after vacuum:", sorted(t.files))
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>try:
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>    print("v1 after vacuum:", t.read(1))
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>except KeyError as e:
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>    print("time travel to v1 fails: missing file", e)
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>current: [1, 2, 3, 5, 40]
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>v1: [1, 2, 3, 4, 5]
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>files after vacuum: ['f3']
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>time travel to v1 fails: missing file 'f1'
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+class MiniDelta:
+    """A toy transaction log: each commit lists files it ADDs and REMOVEs."""
+    def __init__(self):
+        self.log = []                    # log[v] = (adds, removes)
+        self.files = {}                  # file name -&gt; list of rows
+
+    def commit(self, adds=None, removes=()):
+        adds = adds or {}
+        self.files.update(adds)
+        self.log.append((list(adds), list(removes)))
+        return len(self.log) - 1
+
+    def snapshot(self, version=None):
+        version = len(self.log) - 1 if version is None else version
+        live = []
+        for adds, removes in self.log[: version + 1]:
+            live = [f for f in live if f not in removes] + adds
+        return live
+
+    def read(self, version=None):
+        return sorted(r for f in self.snapshot(version) for r in self.files[f])
+
+    def vacuum(self, keep_versions=1):
+        keep = set(self.snapshot())
+        for v in range(max(0, len(self.log) - keep_versions), len(self.log)):
+            keep |= set(self.snapshot(v))
+        for f in list(self.files):
+            if f not in keep:
+                del self.files[f]
+
+t = MiniDelta()
+t.commit({"f1": [1, 2, 3]})                         # v0
+t.commit({"f2": [4, 5]})                            # v1
+t.commit({"f3": [1, 2, 3, 40, 5]}, removes=["f1", "f2"])   # v2 (a rewrite)
+print("current:", t.read())
+print("v1:", t.read(1))
+t.vacuum()
+print("files after vacuum:", sorted(t.files))
+try:
+    print("v1 after vacuum:", t.read(1))
+except KeyError as e:
+    print("time travel to v1 fails: missing file", e)
+```
+
+Each commit is only a list of file additions and removals; a table version is the replay of that log. Vacuum deletes unreferenced files, so older versions can no longer be read. This is a teaching model of Delta's idea, not Delta's actual protocol. Verified by running the solution.
+</code></pre></div>
+<h3 id="merge-with-deduplicated-cdc">MERGE with deduplicated CDC<a class="headerlink" href="#merge-with-deduplicated-cdc" title="Permanent link">&para;</a></h3>
+<p>Implement merge(target, source) to update matches, insert new rows, and delete rows flagged op='d', raising an error when the source has duplicate keys. Then deduplicate the change feed with latest_per_key and merge again.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>def merge(target, source, key="id"):
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    # update matching rows, insert new ones, delete rows with op == "d";
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    # raise ValueError if the source has two rows with the same key
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    return target
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>def latest_per_key(changes, key="id", order="ts"):
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    best = {}
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    for r in changes:
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        if r[key] not in best or r[order] &gt; best[r[key]][order]:
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>            best[r[key]] = r
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    return list(best.values())
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>target = [{"id": 1, "city": "Oslo"}, {"id": 2, "city": "Rome"}, {"id": 3, "city": "Kyiv"}]
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>changes = [
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    {"id": 2, "city": "Milan", "ts": 1, "op": "u"},
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    {"id": 2, "city": "Turin", "ts": 2, "op": "u"},
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    {"id": 3, "ts": 3, "op": "d"},
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    {"id": 4, "city": "Lima", "ts": 4, "op": "i"},
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>]
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>try:
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>    merge(target, changes)
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>except ValueError as e:
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>    print("error:", e)
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>print(merge(target, latest_per_key(changes)))
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>error: multiple source rows for id=2
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>[{'id': 1, 'city': 'Oslo'}, {'id': 2, 'city': 'Turin', 'ts': 2}, {'id': 4, 'city': 'Lima', 'ts': 4}]
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+def merge(target, source, key="id"):
+    """MERGE INTO: update matches, insert new rows, delete rows flagged op='d'.
+    Duplicate source keys are an error (ambiguous merge) unless deduplicated first."""
+    seen = set()
+    for r in source:
+        if r[key] in seen:
+            raise ValueError(f"multiple source rows for {key}={r[key]}")
+        seen.add(r[key])
+    out = {r[key]: dict(r) for r in target}
+    for r in source:
+        k = r[key]
+        if r.get("op") == "d":
+            out.pop(k, None)
+        elif k in out:
+            out[k].update({c: v for c, v in r.items() if c != "op"})
+        else:
+            out[k] = {c: v for c, v in r.items() if c != "op"}
+    return [out[k] for k in sorted(out)]
+
+def latest_per_key(changes, key="id", order="ts"):
+    best = {}
+    for r in changes:
+        if r[key] not in best or r[order] &gt; best[r[key]][order]:
+            best[r[key]] = r
+    return list(best.values())
+
+target = [{"id": 1, "city": "Oslo"}, {"id": 2, "city": "Rome"}, {"id": 3, "city": "Kyiv"}]
+changes = [
+    {"id": 2, "city": "Milan", "ts": 1, "op": "u"},
+    {"id": 2, "city": "Turin", "ts": 2, "op": "u"},
+    {"id": 3, "ts": 3, "op": "d"},
+    {"id": 4, "city": "Lima", "ts": 4, "op": "i"},
+]
+try:
+    merge(target, changes)
+except ValueError as e:
+    print("error:", e)
+print(merge(target, latest_per_key(changes)))
+```
+
+MERGE needs at most one source row per target row, so CDC feeds are reduced to the latest change per key first. Verified by running the solution.
+</code></pre></div>
+<hr />
+<p>More free practice: the <a href="../">Databricks Mastery Path</a> curriculum, the <a href="https://learnmasterypath.com/interview-pack/">Interview Prep Pack</a> and the <a href="https://learnmasterypath.com/resume/">free resume ATS check</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+  
+  <nav class="mp-related" aria-label="Related free courses">
+    <h2>Related free courses</h2>
+    <ul>
+      <li><a href="https://learnmasterypath.com/postgresql-mastery-path/">PostgreSQL</a></li><li><a href="https://learnmasterypath.com/mongodb-mastery-path/">MongoDB</a></li><li><a href="https://learnmasterypath.com/redis-mastery-path/">Redis</a></li><li><a href="https://learnmasterypath.com/snowflake-mastery-path/">Snowflake</a></li><li><a href="https://learnmasterypath.com/python-mastery-path/vector-databases-mastery-path/">Vector Databases</a></li>
+      <li><a href="https://learnmasterypath.com/">All 100+ courses &rarr;</a></li>
+    </ul>
+  </nav>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../cheat-sheet/" class="md-footer__link md-footer__link--next" aria-label="Next: Cheat Sheet">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Cheat Sheet
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+  <div class="mp-foot">
+    <div class="mp-foot-inner">
+      <a class="mp-foot-brand" href="https://learnmasterypath.com/"><svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg><span>Mastery Path</span></a>
+      <nav class="mp-sitelinks" aria-label="Site and legal links">
+        <a href="https://learnmasterypath.com/">All courses</a>
+        <a href="https://learnmasterypath.com/about.html">About</a>
+        <a href="https://learnmasterypath.com/contact.html">Contact</a>
+        <a href="https://learnmasterypath.com/databricks-mastery-path/privacy/">Privacy Policy</a>
+        <a href="https://learnmasterypath.com/terms.html">Terms</a>
+        <a href="https://learnmasterypath.com/databricks-mastery-path/license/">License</a>
+        <a href="https://learnmasterypath.com/verify/">Verify a certificate</a>
+      </nav>
+    </div>
+    <p class="mp-license-note">
+      © 2026 Vinod Kumar Sigilipelli · Except where otherwise noted, lesson content is licensed under
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and code examples under the
+      <a href="https://opensource.org/license/mit">MIT License</a>.
+    </p>
+  </div>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../javascripts/progress-tracker.js"></script>
+      
+        <script src="../javascripts/final-quiz.js"></script>
+      
+    
+  </body>
+</html>
